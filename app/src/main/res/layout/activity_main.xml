@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar con imagen y título -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YellyG"
+            android:textColor="#FF351F"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Segundo toolbar con opciones -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark">
+
+        <!-- Aquí puedes añadir elementos de menú como "ayuda" y "creador" mediante código en tu Activity/Fragment. -->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Body Main -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Cliente"
+            android:textSize="20sp"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:hint="Tipo Gelatina"
+            android:textSize="20sp"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:hint="Tamaño"
+            android:textSize="20sp"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:hint="Cantidad"
+            android:textSize="20sp"
+            android:inputType="number"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Agregar"
+            android:textSize="20sp"
+            android:textColor="#F4EEED"
+            android:backgroundTint="#8E1B0B"/>
+    </LinearLayout>
+</LinearLayout>
